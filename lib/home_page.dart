@@ -33,8 +33,9 @@ class _HomePageState extends State<HomePage> {
                 child: InkWell(
                     onTap: () {
                       setState(() {});
-                      final random = Random().nextInt(6) + 1;
-                      solDice = random;
+                      // final random = Random().nextInt(6) + 1;
+                      solDice = Random().nextInt(6) + 1;
+                      onDice = Random().nextInt(6) + 1;
                       math.log('sol jak');
                     },
                     child: Image.asset('images/dice_$solDice.png')),
@@ -49,8 +50,10 @@ class _HomePageState extends State<HomePage> {
                 child: InkWell(
                     onTap: () {
                       setState(() {});
-                      final random = Random().nextInt(6) + 1;
-                      onDice = random;
+                      // final random = Random().nextInt(6) + 1;
+                      // onDice = random;
+                      solDice = Random().nextInt(6) + 1;
+                      onDice = Random().nextInt(6) + 1;
                       math.inspect('on jak');
                     },
                     child: Image.asset('images/dice_$onDice.png')),
